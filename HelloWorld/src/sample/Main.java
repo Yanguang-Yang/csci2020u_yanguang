@@ -46,8 +46,8 @@ public class Main extends Application {
 
         table.getColumns().addAll(c1, c2, c3, c4, c5, c6);
 
-        table.getItems().addAll(c1, c2, c3, c4, c5, c6);
-        //table.getItems().add(new StudentRecord("100100100", 75.0f, 68.0f, 54.25f));
+        //table.getItems().addAll(c1, c2, c3, c4, c5, c6);
+        table.getItems().add(new StudentRecord("100100100", 75.0f, 68.0f, 54.25f));
 
         VBox vbox = new VBox(table);
         //vbox.setSpacing(5);

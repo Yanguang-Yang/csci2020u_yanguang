@@ -12,6 +12,10 @@
         <columns>
             <TableColumn fx:id="sid" text="SID"></TableColumn>
             <TableColumn fx:id="assig" text="Assignment"></TableColumn>
+            <TableColumn fx:id="midt" text="midt"></TableColumn>
+            <TableColumn fx:id="finale" text="finale"></TableColumn>
+            <TableColumn fx:id="finalm" text="finalm"></TableColumn>
+            <TableColumn fx:id="grade" text="grade"></TableColumn>
         </columns>
     </TableView>
 </GridPane>
