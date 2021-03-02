@@ -11,7 +11,7 @@
     <TableView fx:id="tableView" GridPane.columnIndex="0" GridPane.rowIndex="0">
         <columns>
             <TableColumn fx:id="sid" text="SID"></TableColumn>
-
+            <TableColumn fx:id="assig" text="Assignment"></TableColumn>
         </columns>
     </TableView>
 </GridPane>

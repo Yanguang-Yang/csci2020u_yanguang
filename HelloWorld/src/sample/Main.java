@@ -37,17 +37,17 @@ public class Main extends Application {
         TableView table = new TableView();
         table.setEditable(true);
 
-        TableColumn sid = new TableColumn("SID");
-        TableColumn assig = new TableColumn("Assignment");
-        TableColumn midt = new TableColumn("Midterm");
-        TableColumn finale = new TableColumn("Final Exam");
-        TableColumn finalm = new TableColumn("Final Mark");
-        TableColumn grade = new TableColumn("Letter Grade");
+        TableColumn c1 = new TableColumn("SID");
+        TableColumn c2 = new TableColumn("Assignment");
+        TableColumn c3 = new TableColumn("Midterm");
+        TableColumn c4 = new TableColumn("Final Exam");
+        TableColumn c5 = new TableColumn("Final Mark");
+        TableColumn c6 = new TableColumn("Letter Grade");
 
-        table.getColumns().addAll(sid, assig, midt, finale, finalm, grade);
+        table.getColumns().addAll(c1, c2, c3, c4, c5, c6);
 
-        //table.getItems().addAll();
-        table.getItems().add(new StudentRecord("100100100", 75.0f, 68.0f, 54.25f));
+        table.getItems().addAll(c1, c2, c3, c4, c5, c6);
+        //table.getItems().add(new StudentRecord("100100100", 75.0f, 68.0f, 54.25f));
 
         VBox vbox = new VBox(table);
         //vbox.setSpacing(5);
