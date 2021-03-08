@@ -21,29 +21,21 @@ public class Controller {
     @FXML
     private TableView tableView;
     @FXML
-    private TableColumn sid;
+    private TableColumn tc1;
     @FXML
-    private TableColumn assig;
+    private TableColumn tc2;
     @FXML
-    private TableColumn midt;
-    @FXML
-    private TableColumn finale;
-    @FXML
-    private TableColumn finalm;
-    @FXML
-    private TableColumn grade;
+    private TableColumn tc3;
 
-    private TableView<StudentRecord> marks;
+
+    //private TableView<StudentRecord> marks;
 
     @FXML
     public void initialize(){
-        sid.setCellValueFactory(new PropertyValueFactory<>("sid"));
-        assig.setCellValueFactory(new PropertyValueFactory<>("assig"));
-        midt.setCellValueFactory(new PropertyValueFactory<>("midt"));
-        finale.setCellValueFactory(new PropertyValueFactory<>("finale"));
-        finalm.setCellValueFactory(new PropertyValueFactory<>("finalm"));
-        grade.setCellValueFactory(new PropertyValueFactory<>("grade"));
+        tc1.setCellValueFactory(new PropertyValueFactory<>("sid"));
+        tc2.setCellValueFactory(new PropertyValueFactory<>("assig"));
+        tc3.setCellValueFactory(new PropertyValueFactory<>("midt"));
 
-        tableView.setItems(DataSource.getAllMarks());
+        //tableView.setItems(DataSource.getAllMarks());
     }
 }

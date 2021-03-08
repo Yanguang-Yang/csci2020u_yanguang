@@ -12,8 +12,13 @@ import javafx.scene.text.Font;
 import javafx.stage.Stage;
 import javafx.collections.ObservableList;
 import javafx.collections.FXCollections;
-
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.stage.DirectoryChooser;
+import javafx.stage.Stage;
 import javax.xml.crypto.Data;
+import java.io.File;
 
 public class Main extends Application {
 
@@ -24,42 +29,30 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) {
-        //Scene scene = new Scene(new Group());
-        //stage.setTitle("Table View Sample");
-        //stage.setWidth(1000);
-        //stage.setHeight(500);
+        Button asgm = new Button("Assignment");
+        //Scene scene = new Scene(asgm);
 
+        DirectoryChooser directoryChooser = new DirectoryChooser();
+        directoryChooser.setInitialDirectory(new File("D:\\Chrome\\WordCounter"));
+        File mainDirectory = directoryChooser.showDialog(stage);
 
-        //final Label label = new Label("Address Book");
-        //label.setFont(new Font("Arial", 20));
-
+        File[] listfile = mainDirectory.listFiles();
 
         TableView table = new TableView();
         table.setEditable(true);
 
-        TableColumn c1 = new TableColumn("SID");
-        TableColumn c2 = new TableColumn("Assignment");
-        TableColumn c3 = new TableColumn("Midterm");
-        TableColumn c4 = new TableColumn("Final Exam");
-        TableColumn c5 = new TableColumn("Final Mark");
-        TableColumn c6 = new TableColumn("Letter Grade");
+        TableColumn tc1 = new TableColumn("File");
+        TableColumn tc2 = new TableColumn("Actual Class");
+        TableColumn tc3 = new TableColumn("Spam Probability");
 
-        table.getColumns().addAll(c1, c2, c3, c4, c5, c6);
+        table.getColumns().addAll(tc1, tc2, tc3);
 
-        table.getItems().addAll(c1, c2, c3, c4, c5, c6);
-        //table.getItems().add(new StudentRecord("100100100", 75.0f, 68.0f, 54.25f));
+        //table.getItems().add(new TestFile("dsafdsa", 32.23, "fdsa"));
 
         VBox vbox = new VBox(table);
-        //vbox.setSpacing(5);
-        //vbox.setPadding(new Insets(0, 0, 0, 0));
-        //vbox.getChildren().addAll(table);
-
-        //((Group) scene.getRoot()).getChildren().addAll(vbox);
-
-        //stage.setScene(scene);
-        //stage.show();
 
         Scene scene = new Scene(vbox);
+
         stage.setScene(scene);
         stage.show();
     }
