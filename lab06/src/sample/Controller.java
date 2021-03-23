@@ -23,39 +23,10 @@ public class Controller {
     private void initialize() {
         GraphicsContext gc = canvas.getGraphicsContext2D();
 
-        //double[] data = {1,2,3,4,5,6,7,8};
-        //double[] data2 = {0,1,2,3,4,5,6,7};
-
-        //drawBarChart(100,300,avgHousingPricesByYear,Color.RED,0);
-        //drawBarChart(100,300,avgCommercialPricesByYear,Color.BLUE,100/avgCommercialPricesByYear.length);
 
         drawPieChart(gc);
     }
-/*
-    private void drawBarChart(int w, int h, double[] data, Color colour,int startX) {
-        gc.setFill(colour);
-        double xInc = (data.length);
 
-        double maxVal = Double.NEGATIVE_INFINITY;
-        double minVal = Double.MAX_VALUE;
-
-        for(double val: data){
-            if(val > maxVal){
-                maxVal = val;
-            } if(val < minVal){
-                minVal = val;
-            }
-        }
-
-        double x = startX;
-        for(double val: data){
-            double height = ((val-minVal) / (maxVal - minVal)) * h;
-            gc.fillRect(x,(h-height),xInc,height);
-            x += 2 * xInc;
-        }
-    }
-
- */
 
     private void drawPieChart(GraphicsContext gc) {
         int numOfStudents = 0;
