@@ -136,7 +136,7 @@ public class Main extends Application {
             midterm   = new SimpleDoubleProperty(midt);
             assignments=new SimpleDoubleProperty(assig);
             finalExam =new SimpleDoubleProperty(finalg);
-            double total = 2/100*assig+3/100*midt+5/100*finalg;
+            double total = 0.2*assig + 0.3*midt + 0.5*finalg;
             finalMark =new SimpleDoubleProperty(total);
             if(total>=80){
                 letterGrade=new SimpleStringProperty("A");
