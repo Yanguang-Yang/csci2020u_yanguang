@@ -92,14 +92,10 @@ public class SharingServerClient extends Frame {
 		}
 		
 		in = new BufferedReader(new InputStreamReader(System.in));
-
-
-
-
 	}
-	
-	// Logcin function
-	protected void download() {
+
+
+	protected void upload() {									//upload file
 		String input = null;
 		String message = null;
 		int errorCode = 0;
@@ -143,7 +139,7 @@ public class SharingServerClient extends Frame {
 		}
 	}
 
-	protected void download() {
+	protected void download() {											//download file
 		String input = null;
 		String message = null;
 		int errorCode = 0;

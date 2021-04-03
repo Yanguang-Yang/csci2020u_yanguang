@@ -33,9 +33,6 @@ public class SharingServerThread extends Thread {
 		out.println("200 Ready For Chat");	
 		
 		boolean endOfSession = false;
-		while(!endOfSession) {
-			endOfSession = processCommand();
-		}
 		try {
 			socket.close();
 		} catch(IOException e) {
