@@ -31,6 +31,13 @@ public class Main extends Application {
         MenuBar menuBar = new MenuBar();
 
         // --- Menu File
+        Button button1 = new Button();
+//一个指定了文本标题的Button
+        Button button2 = new Button("Accept");
+
+        Button btn = new Button("12321");
+
+
         Menu menuFile = new Menu("File");
         MenuItem menew = new MenuItem("New");
         MenuItem meopen = new MenuItem("Open");
@@ -80,7 +87,7 @@ public class Main extends Application {
         TextField psfullname = new TextField();
         TextField psemail = new TextField();
 
-        Button btn = new Button("Add");
+        //Button btn = new Button("Add");
 //        -- link
 
 
