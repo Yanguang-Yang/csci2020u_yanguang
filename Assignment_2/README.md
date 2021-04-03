@@ -7,7 +7,7 @@ There are two buttons: Upload and Download on the top, and two tables on the bot
 # b
 Same UI as the PDF.
 # c
-Upload: Select one file from the left table. Click "Upload"
+Upload: Select one file from the left table. Click "Upload"  
 Download: Select one file from the left table. Click "Download"
 # d
 Tutorial 4 - Code Walkthrough ChatServer Application using Sockets
